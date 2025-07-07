@@ -18,4 +18,13 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     });
     return true;
   }
+
+  if (msg.action === "getFavicon") {
+    chrome.tabs.get(sender.tab.id, (tab) => {
+      const faviconUrl = `chrome-extension://${
+        chrome.runtime.id
+      }/_favicon/?pageUrl=${encodeURIComponent(tab.url)}&size=32`;
+      chrome.tabs.sendMessage(sender.tab.id, { action: "favicon", faviconUrl });
+    });
+  }
 });

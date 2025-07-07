@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Cookie & Ad Tracker Overlay",
+    "name": "Extract form the Extractor Extention",
     "version": "1.0",
     "description": "Extract from the extractor",
     "permissions": [
@@ -10,7 +10,8 @@
       "scripting",
       "webRequest",
       "webRequestBlocking",
-      "<all_urls>"
+      "<all_urls>",
+      "favicon"
     ],
     "host_permissions": ["<all_urls>"],
     "background": {
@@ -21,6 +22,11 @@
         "matches": ["<all_urls>"],
         "js": ["content.js"],
         "css": ["overlay.css"]
+      }
+    ],"web_accessible_resources": [
+      {
+        "resources": ["_favicon/*"],
+        "matches": ["<all_urls>"]
       }
     ]
   }
