@@ -1,0 +1,3 @@
+This Chrome extension was designed and developed by Fabian Stenzel for the course "Data Bodys" by Aram Bartholl at University of Applied Sciences Hamburg, Germany.
+
+Cookies and tracking connections are hidden technologies used on almost every online platform. Web shops, free online magazines, and social networks cannot be used for advertising purposes without consent. A Chrome extension has been developed to visualize which cookies and tracking connections are set on a currently used website. By collecting this data, it is possible to gain an impression of the extent of one's own digital footprint.
